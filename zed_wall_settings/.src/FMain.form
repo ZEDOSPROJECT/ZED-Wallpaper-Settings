@@ -1,0 +1,27 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  Move(0,0,416,88)
+  #Scaled = False
+  Text = ("Online Wallpaper")
+  Icon = Picture["icon:/32/fill"]
+  Resizable = False
+  { cmb_type ComboBox
+    Move(56,8,352,32)
+    ReadOnly = True
+    List = [("Nothing"), ("SlideShow"), ("Costa da caparica (WebCam)"), ("Diani Beach - Kenya (WebCam)"), ("Ground Zero, New York (WebCam)"), ("Madeira (WebCam)"), ("Paris (WebCam)"), ("Mount Arunachala (WebCam)"), ("Saint Jouin Bruneval (WebCam)"), ("Toronto Skyline and CN Tower (WebCam)")]
+    Text = ("Nothing")
+  }
+  { Label1 Label
+    Move(8,8,40,32)
+    Text = ("Type:")
+  }
+  { Button1 Button
+    Move(280,48,128,32)
+    Text = ("OK")
+  }
+  { Button2 Button
+    Move(8,48,128,32)
+    Text = ("Cancel")
+  }
+}

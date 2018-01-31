@@ -1,0 +1,69 @@
+' Gambas class file
+
+Public Sub _new()
+
+End
+
+Public Sub Form_Open()
+  Me.X = Screen.W / 2 - Me.W / 2
+  Me.y = Screen.H / 2 - Me.H / 2
+  
+  If Exist("~/.config/zed/ow") Then
+  Endif
+End
+' 
+' Public Sub ckb_Click()
+' 
+'   If ckb.Value = "0" Then
+'     Kill "~/.config/zed/ow"
+'   Else
+'     File.Save("~/.config/zed/ow", "Nothing here")
+'   Endif
+' 
+' End
+
+Public Sub Button1_Click()
+
+  Print cmb_type.Index
+  If cmb_type.Index = 0 Then
+    If Exist("~/.config/zed/ow") Then
+      Kill "~/.config/zed/ow"
+    Endif
+  Endif
+  If cmb_type.Index = 1 Then
+    File.Save("~/.config/zed/ow", "slide")
+  Endif
+  If cmb_type.Index = 2 Then
+    File.Save("~/.config/zed/ow", "http://www.camscape.com/thumbnails/36774.jpg")
+  Endif
+  If cmb_type.Index = 3 Then
+    File.Save("~/.config/zed/ow", "http://www.camscape.com/thumbnails/36790.jpg")
+  Endif
+  If cmb_type.Index = 4 Then
+    File.Save("~/.config/zed/ow", "http://www.camscape.com/thumbnails/2324.jpg")
+  Endif
+  If cmb_type.Index = 5 Then
+    File.Save("~/.config/zed/ow", "http://www.camscape.com/thumbnails/364.jpg")
+  Endif
+  If cmb_type.Index = 6 Then
+    File.Save("~/.config/zed/ow", "http://www.webcam-hd.fr/images/pariscam3/webcam_pariscam3_5min.jpg")
+  Endif
+  If cmb_type.Index = 7 Then
+    File.Save("~/.config/zed/ow", "http://www.camscape.com/thumbnails/34233.jpg")
+  Endif
+  If cmb_type.Index = 8 Then
+    File.Save("~/.config/zed/ow", "http://www.camscape.com/thumbnails/34914.jpg")
+  Endif
+  If cmb_type.Index = 9 Then
+    File.Save("~/.config/zed/ow", "http://www.camscape.com/thumbnails/34496.jpg")
+  Endif
+  Quit
+
+End
+
+Public Sub Button2_Click()
+
+  Quit
+
+End
+
